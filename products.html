@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 15px;
+            font-size: 24px;
+        }
+
+        .products-container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .product {
+            background: white;
+            padding: 15px;
+            width: 250px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            text-align: center;
+        }
+
+        .product img {
+            width: 100%;
+            border-radius: 8px;
+        }
+
+        .price {
+            color: green;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+
+        .button {
+            display: inline-block;
+            padding: 10px 15px;
+            background: #4CAF50;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+
+        .button:hover {
+            background: #45a049;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Our Products</h1>
+    </header>
+
+    <section class="products-container">
+        <div class="product">
+            <img src="/images/maizegrain.webp" alt="Maize">
+            <h2>Maize</h2>
+            <p class="price">2000 per kg</p>
+            <a href="#" class="button">Buy Now</a>
+        </div>
+
+        <div class="product">
+            <img src="/images/black.jpg" alt="Beans">
+            <h2>Beans</h2>
+            <p class="price">6000 perkg</p>
+            <a href="#" class="button">Buy Now</a>
+        </div>
+
+        <div class="product">
+            <img src="/images/soybeans.webp" alt="Soybeans">
+            <h2>Soybeans</h2>
+            <p class="price">8000 per kg</p>
+            <a href="#" class="button">Buy Now</a>
+<br>
+        </div>
+            <div class="product">
+                <img src="/images/gnuts.jpg" alt="Soybeans">
+                <h2>Gnuts</h2>
+                <p class="price">7000 per kg</p>
+                <a href="#" class="button">Buy Now</a>
+            
+        </div>
+    </section>
+
+</body>
+</html>

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Account Settings</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-image: url(/images/bowl.avif);
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .account-container {
+            background: white;
+            padding: 20px;
+            width: 350px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        label {
+            font-weight: bold;
+            display: block;
+            margin-top: 10px;
+        }
+
+        input {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .btn {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            margin-top: 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            text-align: center;
+        }
+
+        .update-btn {
+            background-color: #4CAF50;
+            color: white;
+        }
+
+        .update-btn:hover {
+            background-color: #45a049;
+        }
+
+        .logout-btn {
+            background-color: #ff4d4d;
+            color: white;
+        }
+
+        .logout-btn:hover {
+            background-color: #d93636;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="account-container">
+        <h2>Account Settings</h2>
+        
+        <!-- Update Profile -->
+        <form action="#" method="POST">
+            <label for="username">Username</label>
+            <input type="text" id="username" value="JohnDoe" required>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" value="johndoe@example.com" required>
+
+            <button type="submit" class="btn update-btn">Update Profile</button>
+        </form>
+
+        <hr>
+
+        <!-- Reset Password -->
+        <form action="#" method="POST">
+            <h3>Reset Password</h3>
+            
+            <label for="old-password">Old Password</label>
+            <input type="password" id="old-password" required>
+
+            <label for="new-password">New Password</label>
+            <input type="password" id="new-password" required>
+
+            <label for="confirm-password">Confirm New Password</label>
+            <input type="password" id="confirm-password" required>
+
+            <button type="submit" class="btn update-btn">Update Password</button>
+        </form>
+
+        <hr>
+
+        <!-- Logout -->
+        <button class="btn logout-btn">Logout</button>
+    </div>
+
+</body>
+</html>
